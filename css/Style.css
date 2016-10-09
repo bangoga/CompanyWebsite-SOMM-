@@ -1,0 +1,152 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* Font Being used in main header*/
+@font-face {
+    font-family: 'Hero'; /*a name to be used later*/
+    src: url(../fonts/Hero.otf) /*URL to font*/
+}
+
+.container-fluid{
+	background-color: rgba(0, 0, 0, 0.9);
+}
+.navbar-header{
+	font-family:'Hero';
+	font-size:17px;
+	color:#FFFFFF;
+	width:100%;
+	height:100%;
+	background:#FFFFFF;
+	opacity:25%;
+	float: left;
+    padding-left: 15px;
+	padding-right:15px;
+    text-align: center;
+	border-radius:20px;
+	
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 1%;
+    padding: 0;
+    overflow: hidden;
+    background-color:#FFFFFF;
+	width:120%;
+}
+
+
+nav li{
+	 display:inline-block;	
+	 margin:2%; 
+
+}
+
+nav li a{
+		 color:#000000;
+	 	 text-decoration:none;
+}
+
+a.navbar-brand{
+	padding-left:45%;
+	padding-top:.5%;
+}
+.navicons{
+	float:right;
+	margin-right:10%;
+	
+}
+/**The navbar over here is to add drop shadow*/
+
+
+
+
+/*Animation for the background*/
+
+* {box-sizing:border-box}
+body {font-family: Verdana,sans-serif;}
+.mySlides {display:none}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  height:60%;
+  position: relative;
+  margin-top: -1%;
+  background:#000000;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: ease-in-out;
+  -webkit-animation-duration: 5s;
+  animation-name: ease-in-out;
+  animation-duration: 5s;
+  transition-delay: 1s;
+  
+}
+
+@-webkit-keyframes ease-in-out {
+    0%   {opacity: .1;}
+    10%  {opacity: .3;}
+    20%  {opacity: .5;}
+    30%  {opacity: .7;}
+	50%  {opacity: 1;}
+	60%  {opacity: .7;}
+	70%  {opacity: .5;}
+	850%  {opacity: .3;}
+    100% {opacity: .1;}
+}
+
+@keyframes ease-in-out {
+    0%   {opacity: .1;}
+    10%  {opacity: .3;}
+    20%  {opacity: .5;}
+    30%  {opacity: .7;}
+	50%  {opacity: 1;}
+	60%  {opacity: .7;}
+	70%  {opacity: .5;}
+	850%  {opacity: .3;}
+    100% {opacity: .1;}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
