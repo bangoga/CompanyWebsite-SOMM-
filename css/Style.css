@@ -6,24 +6,26 @@
     font-family: 'Hero'; /*a name to be used later*/
     src: url(../fonts/Hero.otf) /*URL to font*/
 }
-
 .container-fluid{
-	background-color: rgba(0, 0, 0, 0.9);
+	background-color: rgba(255,255,255,1.00);
+	height: 100%;
 }
+
+
 .navbar-header{
-	font-family:'Hero';
-	font-size:17px;
-	color:#FFFFFF;
-	width:100%;
-	height:100%;
-	background:#FFFFFF;
-	opacity:25%;
+	font-family: 'Hero';
+	font-size: 17px;
+	color: #FFFFFF;
+	width: 100%;
+	height: 7.5%;
+	background: #FFFFFF;
+	background: rgba(255, 255, 255, 0.3);
+	opacity: 80%;
 	float: left;
-    padding-left: 15px;
-	padding-right:15px;
-    text-align: center;
-	border-radius:20px;
-	
+	padding-left: 15px;
+	padding-right: 15px;
+	text-align: center;
+	position: fixed;
 }
 
 
@@ -32,7 +34,6 @@ ul {
     margin: 1%;
     padding: 0;
     overflow: hidden;
-    background-color:#FFFFFF;
 	width:120%;
 }
 
@@ -49,7 +50,7 @@ nav li a{
 }
 
 a.navbar-brand{
-	padding-left:45%;
+	margin-left:45%;
 	padding-top:.5%;
 }
 .navicons{
@@ -58,95 +59,231 @@ a.navbar-brand{
 	
 }
 /**The navbar over here is to add drop shadow*/
-
+.navbar{
+	position:relative;
+	background: white;
+	height:60%;
+	width:102%;
+	margin-left:-1%; 
+}
 
 
 
 /*Animation for the background*/
 
 * {box-sizing:border-box}
-body {font-family: Verdana,sans-serif;}
-.mySlides {display:none}
+body {
+	font-family: Verdana,sans-serif;
+	background-color:#5D0970;
+	}
+.mySlides {
+	display: none;
+	height: 5%;
+}
 
 /* Slideshow container */
-.slideshow-container {
+
+.css-slideshow{
+	border-radius:1%;
+	position: relative;
+	max-width: 80%;
+	margin-top: 2%;
+	margin-right: 3%;
+	margin-left: 11%;
+	margin-bottom: 20%;
+	height: 500px;
+	background:#FFF8F8;
+	}
+.css-slideshow figure{
+  margin: 0;
   max-width: 100%;
-  height:60%;
-  position: relative;
-  margin-top: -1%;
-  background:#000000;
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
+  height: 370px;
+  background: #000;
   position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
+  
 }
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
+.css-slideshow img{
+  box-shadow: 0 0 2px #666;
+  
+}
+.css-slideshow figcaption{
   position: absolute;
   top: 0;
+  color: #fff;
+  background: rgba(0,0,0, .3);
+  font-size: .8em;
+  padding: 8px 12px;
+  opacity: 0;
+  transition: opacity .5s;
+}
+.css-slideshow:hover figure figcaption{
+  transition: opacity .5s;
+  opacity: 1;
+}
+.css-slideshow-attr{
+  max-width: 495px;
+  text-align: right;
+  font-size: .7em;
+  font-style: italic;
+  margin:0 auto;
+}
+.css-slideshow-attr a{
+  color: #666;
+}
+.css-slideshow figure{
+  opacity:0;
+}
+figure:nth-child(1) {
+  animation: xfade 48s 42s infinite;
+}
+figure:nth-child(2) {
+  animation: xfade 48s 36s infinite;
+}
+figure:nth-child(3) {
+  animation: xfade 48s 30s infinite;
+}
+figure:nth-child(4) {
+  animation: xfade 48s 24s infinite;
+}
+figure:nth-child(5) {
+  animation: xfade 48s 18s infinite;
+}
+figure:nth-child(6) {
+  animation: xfade 48s 12s infinite;
+}
+figure:nth-child(7) {
+  animation: xfade 48s 6s infinite;
+}
+figure:nth-child(8) {
+  animation: xfade 48s 0s infinite;
 }
 
-/* The dots/bullets/indicators */
-.dot {
-  height: 13px;
-  width: 13px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: ease-in-out;
-  -webkit-animation-duration: 5s;
-  animation-name: ease-in-out;
-  animation-duration: 5s;
-  transition-delay: 1s;
+@keyframes xfade{
+  0%{
+    opacity: 1;
+  }
+  10.5% {
+    opacity: 1;
+  }
+  12.5%{
+    opacity: 0;
+  }
+  98% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
   
 }
 
-@-webkit-keyframes ease-in-out {
-    0%   {opacity: .1;}
-    10%  {opacity: .3;}
-    20%  {opacity: .5;}
-    30%  {opacity: .7;}
-	50%  {opacity: 1;}
-	60%  {opacity: .7;}
-	70%  {opacity: .5;}
-	850%  {opacity: .3;}
-    100% {opacity: .1;}
+#lower-half{
+	heigth: 500px;
+	position: relative;
+	margin-top: -19%;
 }
 
-@keyframes ease-in-out {
-    0%   {opacity: .1;}
-    10%  {opacity: .3;}
-    20%  {opacity: .5;}
-    30%  {opacity: .7;}
-	50%  {opacity: 1;}
-	60%  {opacity: .7;}
-	70%  {opacity: .5;}
-	850%  {opacity: .3;}
-    100% {opacity: .1;}
+.css-slideshow-1{
+	border-radius: 1%;
+	position: relative;
+	max-width: 37%;
+	margin-left: 11%;
+	margin-bottom: 10%;
+	height: 400px;
+	background: #FFF8F8;
+	margin-top: -4px;
+	}
+	
+.css-slideshow-1 figure{
+  margin: 0;
+  max-width: 100%;
+  height: 370px;
+  background: #000;
+  position: absolute;
+  
+}
+.css-slideshow-1 img{
+  box-shadow: 0 0 2px #666;
+  
+}
+.css-slideshow-1 figcaption{
+  position: absolute;
+  top: 0;
+  color: #fff;
+  background: rgba(0,0,0, .3);
+  font-size: .8em;
+  padding: 8px 12px;
+  opacity: 0;
+  transition: opacity .5s;
+}
+.css-slideshow-1:hover figure figcaption{
+  transition: opacity .5s;
+  opacity: 1;
+}
+.css-slideshow-attr{
+  max-width: 495px;
+  text-align: right;
+  font-size: .7em;
+  font-style: italic;
+  margin:0 auto;
+}
+.css-slideshow-attr a{
+  color: #666;
 }
 
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .text {font-size: 11px}
+.css-slideshow-1 figure{
+  opacity:0;
+}
+
+.css-slideshow-2{
+	border-radius: 1%;
+	position: relative;
+	max-width: 42%;
+	margin-right: 3%;
+	margin-bottom: 10%;
+	height: 400px;
+	background: #FFF8F8;
+	margin-top: -39.7%;
+	margin-left: 49%;
+	}
+	
+.css-slideshow-2 figure{
+  margin: 0;
+  max-width: 100%;
+  height: 370px;
+  background: #000;
+  position: absolute;
+  
+}
+.css-slideshow-2 img{
+  box-shadow: 0 0 2px #666;
+  
+}
+.css-slideshow-2 figcaption{
+  position: absolute;
+  top: 0;
+  color: #fff;
+  background: rgba(0,0,0, .3);
+  font-size: .8em;
+  padding: 8px 12px;
+  opacity: 0;
+  transition: opacity .5s;
+}
+.css-slideshow-2:hover figure figcaption{
+  transition: opacity .5s;
+  opacity: 1;
+}
+.css-slideshow-attr{
+  max-width: 495px;
+  text-align: right;
+  font-size: .7em;
+  font-style: italic;
+  margin:0 auto;
+}
+.css-slideshow-attr a{
+  color: #666;
+}
+
+.css-slideshow-2 figure{
+  opacity:0;
 }
