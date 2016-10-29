@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+
+<style>
+.slideshow {display:none;}
+
+
+.roundBox{
+	width: 150px;
+	height: 150px;
+	border-radius: 150px;
+	-webkit-border-radius: 150px;
+	-moz-border-radius: 150px;
+	background:url(CssPhotos/photo1.jpg)no-repeat;
+	box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+}
+</style>
+<script src="js/jquery-1.12.4.js"></script>
+<script src="js/jquery-ui.js"></script>
+</head>
+
+<body>
+<div style="max-width:500px">
+	<img height="200" name="slide" src="CssPhotos/photo1.jpg" width="400" />
+</div>
+
+<div class="roundBox">
+	
+</div>
+
+<script>
+var i = 0; var path = new Array(); 
+
+// LIST OF IMAGES 
+path[0] = "CssPhotos/photo1.jpg"; 
+path[1] = "CssPhotos/photo2.jpg"; 
+path[2] = "CssPhotos/photo3.jpg"; 
+
+function swapImage() 
+{ 
+document.slide.src = path[i]; 
+if(i < path.length - 1) i++; 
+else i = 0; 
+setTimeout("swapImage()",12000); 
+} 
+window.onload=swapImage; 
+
+$( document ).hover(function() {
+  $( ".roundBox" ).effect( "shake", { times:3 }, 2000 );
+});	
+</script>
+</body>
+</html>
