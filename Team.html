@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Team - SOMM Montréal</title>
+
+<!-- Bootstrap -->
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/Style.css" rel="stylesheet">
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/bootstrap.js"></script>
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+<style type="text/css">
+.card{
+	border-radius: 3%;
+	min-height:350px;
+	background-color:rgba(164,9,134,0.05);
+	outline: none;
+    border-color: #e6a7ff;
+    box-shadow: 0 0 20px #e6a7ff;
+	align-content:center;
+	padding:20px;
+	margin-bottom:2%;
+	width:100%;
+	}
+.card-contain{
+	padding:10px;
+}
+.cirportrait{
+	margin: 0 auto;
+	background-color:rgba(255,255,255,1.00);
+	width: 150px;
+	height: 150px;
+	border-radius: 150px;
+	-webkit-border-radius: 150px;
+	-moz-border-radius: 150px;
+	box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+}
+.style17{
+	margin-top:25px;
+	margin-bottom:20px;
+	width:60%;
+	font-size:5px;
+}
+.description{
+	text-align:center;
+	font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+}
+#director{
+	background-image:url(Square/DSC03750.JPG);
+	background-size:110%;
+}
+#administration{
+	background-image:url(Square/DSC03382.JPG);
+	background-size:110%;
+}
+#communication{
+	background-image:url(Square/DSC03265.JPG);
+	background-size:110%;
+}
+#development{
+	background-image:url(Square/DSC03603.JPG);
+	background-size:110%;
+}
+#education{
+	background-image:url(Square/DSC03620.JPG);
+	background-size:110%;
+}
+#exaffairs{
+	background-image:url(Square/DSC03259.JPG);
+	background-size:110%;
+}
+#finance{
+	background-image:url(Square/DSC03740.JPG);
+	background-size:110%;
+}
+#hresources{
+	background-image:url(Square/DSC03283.JPG);
+	background-size:110%;
+}
+#operations{
+	background-image:url(Square/DSC03301.JPG);
+	background-size:110%;
+}
+#pagetitle{
+	-moz-animation-name: dropTitle;
+    -moz-animation-iteration-count: 1;
+    -moz-animation-timing-function: ease-out;
+    -moz-animation-duration: 1s;
+
+    -webkit-animation-name: dropTitle;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease-out;
+    -webkit-animation-duration: 1s;
+
+    animation-name: dropTitle;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    animation-duration: 1s;
+}
+@-moz-keyframes dropTitle {
+    0% {
+        -moz-transform: translateY(-100px);
+		-moz-opacity: 0;
+    }
+    100% {
+        -moz-transform: translateY(0);
+		-moz-opacity: 1;
+    }
+}
+@-webkit-keyframes dropTitle {
+    0% {
+        -webkit-transform: translateY(-100px);
+		-webkit-opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateY(0);
+		-webkit-opacity: 1;
+    }
+}
+@keyframes dropTitle {
+    0% {
+        transform: translateY(-100px);
+		opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+		opacity: 1;
+    }
+}
+#underline{
+	-moz-animation-name: line;
+    -moz-animation-iteration-count: 1;
+    -moz-animation-timing-function: ease-out;
+    -moz-animation-duration: 1.3s;
+	-moz-transform-origin:left;
+
+    -webkit-animation-name: line;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease-out;
+    -webkit-animation-duration: 1.3s;
+	-webkit-transform-origin:left;
+
+    animation-name: line;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    animation-duration: 1.3s;
+	transform-origin:left;
+}
+@-moz-keyframes line {
+    0% {
+        -moz-transform: scaleX(0);
+		-moz-opacity: 0;
+    }
+    100% {
+        -moz-transform: scaleX(1);
+		-moz-opacity: 1;
+    }
+}
+@-webkit-keyframes line {
+    0% {
+        -webkit-transform: scaleX(0);
+		-webkit-opacity: 0;
+    }
+    100% {
+        -webkit-transform: scaleX(1);
+		-webkit-opacity: 1;
+    }
+}
+@keyframes line {
+    0% {
+        transform: scaleX(0);
+		opacity: 0;
+    }
+    100% {
+        transform: scaleX(1);
+		opacity: 1;
+    }
+}
+#ins{
+	-moz-animation-name: ins;
+    -moz-animation-iteration-count: 1;
+    -moz-animation-timing-function: ease-out;
+    -moz-animation-duration: 2s;
+
+    -webkit-animation-name: ins;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease-out;
+    -webkit-animation-duration: 2s;
+
+    animation-name: ins;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    animation-duration: 2s;
+}
+@-moz-keyframes ins {
+    0% {
+		-moz-opacity: 0;
+    }
+    100% {
+		-moz-opacity: 1;
+    }
+}
+@-webkit-keyframes ins {
+    0% {
+		-webkit-opacity: 0;
+    }
+    100% {
+		-webkit-opacity: 1;
+    }
+}
+@keyframes ins {
+    0% {
+		opacity: 0;
+    }
+    100% {
+		opacity: 1;
+    }
+}
+</style>
+</head>
+<body>
+
+		<div class="container-fluid">
+            <div class="navbar navbar-default navbar-fixed-top"> 
+            <div class="navbar-header">
+            
+            <a href="http://sommontreal.com/" class="navbar-brand" ><img src="CssPhotos/somm.png" alt="School of Music Montreal" width="160" height="80" ></a>
+        
+            <!--Add all the navigation bar things in here --> 
+                <nav class="navicons">	
+                   <ul id="navigation">
+                    <li><a class="hovereffect" href="https://vimeo.com/glossyrey" target="blank"><span data-title="Span" >Span</span></a></li>
+                    <li><a class="hovereffect" href="http://www.youtube.com/user/glossyrey" target="blank"><span data-title="Our Mission" >Our Mission</span></a></li>
+                    <li><a class="hovereffect"  href="Team.html" target="blank"><span data-title="The Team" >The Team</span></a></li>
+                    <li><a class="hovereffect"  href="https://www.facebook.com/Glossyrey" target="blank"><span data-title="Latest News" >Latest News</span></a></li>
+                  </ul>	
+            </nav>
+            </div>
+            </div>
+        </div>
+
+    
+    <!-- The start of the main body -->
+<div class="container-fluid">
+            <div class="row">
+               <div class="col-xs-4 col-sm-4 col-lg-5">
+               		
+                    <h1 id="pagetitle" class="description" style="text-align:left">Meet the people behind the scene.</h1>
+                <div id="underline" style="height:10px; width:520px; border:1px solid #e84b82; background-color: #e84b82;"></div>
+         <span id="ins" class="description" style="text-align:left; font-size:18px;">Click on the portraits to learn more.</span>
+                    
+               </div>
+               <div class="card-contain col-xs-5 col-sm-4 col-md-5 col-lg-2">
+                    <div class="card">
+                    	<div class="cirportrait" id="director"></div>
+                        <div class="description">
+                        <h2>Christopher Ma</h2>
+                        <hr class="style17"><h4>Executive Director</h4>
+                        </div>
+                    </div>
+               </div>
+                <div class="col-xs-4 col-sm-4 col-lg-5"></div>
+            </div>
+            
+            <div class="row">
+               <div class="col-xs-1 col-sm-1 col-lg-2"></div>
+               <div class="card-contain col-xs-5 col-sm-5 col-md-5 col-lg-2">
+                    <div class="card">
+                    	<div class="cirportrait" id="administration"></div>
+                        <div class="description">
+                        <h2>Clement Lai</h2>
+                        <hr class="style17"><h4>Director of Administration</h4>
+                        </div>
+                    </div>
+               </div>
+                
+                <div class="card-contain col-xs-5 col-sm-5 col-md-5 col-lg-2">
+                    <div class="card">
+                    	<div class="cirportrait" id="communication"></div>
+                        <div class="description">
+                        <h2>Chloe Lim</h2>
+                        <hr class="style17"><h4>Director of Communications</h4>
+                        </div>
+                    </div>
+               </div>
+                <div class="card-contain col-xs-5 col-xs-offset-1 col-sm-5 col-md-5 col-lg-2 col-lg-offset-0">
+                    <div class="card">
+                    	<div class="cirportrait" id="development"></div>
+                        <div class="description">
+                        <h2>Samaa Kazerouni</h2>
+                        <hr class="style17"><h4>Director of Development</h4>
+                        </div>
+                    </div>
+               </div>
+                
+                <div class="card-contain col-xs-5 col-sm-5 col-md-5 col-lg-2">
+                    <div class="card">
+                    	<div class="cirportrait" id="education"></div>
+                        <div class="description">
+                        <h2>Trevor Tsui</h2>
+                        <hr class="style17"><h4>Director of Education</h4>
+                        </div>	
+                    </div>
+               </div>
+                <div class="col-xs-1 col-sm-1 col-lg-2"></div>
+            </div>
+            
+            <div class="row">
+               <div class="col-xs-1 col-sm-1 col-lg-2"></div>
+               <div class="card-contain col-xs-5 col-sm-5 col-md-5 col-lg-2">
+                    <div class="card">
+                    	<div class="cirportrait" id="exaffairs"></div>
+                        <div class="description">
+                        <h2>Florence La Rochelle</h2>
+                        <hr class="style17"><h4>Director of External Affairs</h4>
+                        </div>
+                    </div>
+               </div>
+                
+                <div class="card-contain col-xs-5 col-sm-5 col-md-5 col-lg-2">
+                    <div class="card">
+                    	<div class="cirportrait" id="finance"></div>
+                        <div class="description">
+                        <h2>Samar Zora</h2>
+                        <hr class="style17"><h4>Director of Finance</h4>
+                        </div>	
+                    </div>
+               </div>
+               <div class="clearfix visible-xs-block"></div>
+                <div class="card-contain col-xs-5 col-xs-offset-1 col-sm-5 col-md-5 col-lg-2 col-lg-offset-0">
+                    <div class="card">
+                    	<div class="cirportrait" id="hresources"></div>
+                        <div class="description">
+                        <h2>Jin Lee</h2>
+                        <hr class="style17"><h4>Director of Human Resources</h4>
+                        </div>	
+                    </div>
+               </div>
+                
+                <div class="card-contain col-xs-5 col-sm-5 col-md-5 col-lg-2">
+                    <div class="card">
+                    	<div class="cirportrait" id="operations"></div>
+                        <div class="description">
+                        <h2>Carmelia Lee</h2>
+                        <hr class="style17"><h4>Director of Operations</h4>
+                        </div>
+                    </div>
+               </div>
+                <div class="col-xs-1 col-sm-1 col-lg-2"></div>
+            </div><br><br>
+</div>
+</body>
+<footer>
+	<div class="panel-footer">
+    	<div class="foot1">
+        	<ul>
+                <li><img src="http://sommontreal.com/wp-content/themes/zerif-lite/images/map25-redish.png" alt=""></li>
+                <li><img src="http://sommontreal.com/wp-content/themes/zerif-lite/images/telephone65-blue.png" alt="" ></li>
+                <li><img src="http://sommontreal.com/wp-content/themes/zerif-lite/images/telephone65-blue.png" alt="" ></li>
+                <li><img src="http://sommontreal.com/wp-content/themes/zerif-lite/images/telephone65-blue.png" alt="" ></li>
+                <li><img src="http://sommontreal.com/wp-content/themes/zerif-lite/images/telephone65-blue.png" alt="" ></li>
+            </ul>
+          </div>  
+    </div>
+</footer>
+
+       <!--The script-->
+<script>
+$(document).ready(function() {
+   var navbar = $(".navbar-fixed-top");
+	var brand = $(".navbar-brand img");
+	var navicons = $(".navicons");
+	   $(window).scroll(function(){
+		   if ($(document).scrollTop()<20){
+				   navbar.height('100px');
+				   brand.stop().animate({
+					   height:'80px',
+					   width:'160px',
+					   marginLeft:'0'
+					},50);
+					navicons.stop().animate({
+						marginTop:"1.5%"
+					},50);
+		   } else {
+				   navbar.height('40px');
+				   brand.stop().animate({
+					   height:'50px',
+					   width:'90px',
+					   marginLeft:'1vw'
+					},50);
+					navicons.stop().animate({
+						marginTop:"0.5%"
+					},50);
+		   }
+	   });
+});
+</script>
+</html>

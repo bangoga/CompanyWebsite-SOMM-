@@ -11,7 +11,6 @@
 	height: 100%;
 }
 
-
 .navbar-header{
 	font-family: 'Hero';
 	font-size: 17px;
@@ -53,11 +52,13 @@ a.navbar-brand{
 	margin-left:45%;
 	padding-top:.5%;
 }
+
 .navicons{
 	float:right;
 	margin-right:10%;
-	
+	margin-top:1.5%;
 }
+
 /**The navbar over here is to add drop shadow*/
 .navbar{
 	position:relative;
@@ -67,7 +68,9 @@ a.navbar-brand{
 	margin-left:-1%; 
 }
 
-
+.navbar-fixed-top {
+	height:100px;
+}
 
 /*Animation for the background*/
 
@@ -86,19 +89,18 @@ body {
 .css-slideshow{
 	border-radius:1%;
 	position: relative;
-	max-width: 80%;
-	margin-top: 1%;
-	margin-right: 3%;
-	margin-left: 11%;
-	margin-bottom: 20%;
+	width:100%;
+	margin-bottom: 1%;
 	height: 500px;
 	background:rgba(255,255,255,1.00);
 	-moz-box-shadow: 0 0 20px #e6a7ff;
 	-webkit-box-shadow: 0 0 20px #e6a7ff;
 	box-shadow: 0px 0px 20px #e6a7ff;
+	overflow:hidden;
 	}
 .css-slideshow img{
 		border-radius:1%;
+		min-height:30vh;
 }
 
 .shadow-textBox{
@@ -106,7 +108,7 @@ body {
 	width:50%;
 	height:90%;
 	margin-left:47%;
-	margin-top:3%;
+	margin-top:2%;
 	background:rgba(63,63,63,0.63);
 	-moz-box-shadow: 0 0 2px #474747;
 	-webkit-box-shadow: 0 0 2px #474747;
@@ -114,6 +116,7 @@ body {
 	position:absolute;
 	font-family: 'Hero';
 	color:rgba(203,203,203,0.93);
+	padding:1%;
 }
 	
 
@@ -136,45 +139,39 @@ body {
 }
 
 #lower-half{
-	heigth: 500px;
+	height: 500px;
 	position: relative;
-	margin-top: -19%;
 }
 
 .css-slideshow-1{
 	border-radius: 1%;
 	position: relative;
-	max-width: 37%;
-	margin-left: 11%;
-	margin-bottom: 10%;
-	height: 400px;
-	background:rgba(255,255,255,1.00);
-	margin-top: -4px;
+	min-height:480px;
+	background-color:rgba(164,9,134,0.05);
 	outline: none;
     border-color: #e6a7ff;
     box-shadow: 0 0 20px #e6a7ff;
+	align-content:center;
+	padding:10px;
+	margin-bottom:2%;
 	}
 	
 .css-slideshow-2{
 	border-radius: 1%;
 	position: relative;
-	max-width: 42%;
-	margin-right: 3%;
-	margin-bottom: 10%;
-	height: 400px;
+	height:480px;
 	border-color: #e6a7ff;
-	margin-top: -39.7%;
-	margin-left: 49%;
 	box-shadow: 0 0 20px #e6a7ff;
+	margin-bottom:2%;
+	overflow:hidden;
 	}
 	
 .box1-fill{
-	background-color:rgba(164,9,134,0.05);
 	font-family: 'Hero';
 	margin:0%;
 	height:100%;
 	border-radius:1%;
-	display:inline-block;
+	padding:1%;
 	text-align:center;
 	border-color:#e6a7ff;
 }
@@ -209,7 +206,7 @@ body {
 
 
 .roundBox{
-	margin-top:1%;
+	margin: 0 auto;
 	background-color:rgba(255,255,255,1.00);
 	width: 150px;
 	height: 150px;
