@@ -1,0 +1,12 @@
+#infobox {
+	border-radius: 10px;
+	text-align: center;
+	font-family: fantasy;
+	margin-left: 5px;
+	width: 99%%;
+}
+
+#background_for_infobox {
+	border-radius: 20px;
+}
+
