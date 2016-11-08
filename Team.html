@@ -32,17 +32,34 @@ a.card-link:hover .about-link{
 	-moz-animation-name: about;
     -moz-animation-iteration-count: 1;
     -moz-animation-timing-function: ease-out;
-    -moz-animation-duration: 0.2s;
+    -moz-animation-duration: 0.5s;
 
     -webkit-animation-name: about;
     -webkit-animation-iteration-count: 1;
     -webkit-animation-timing-function: ease-out;
-    -webkit-animation-duration: 0.2s;
+    -webkit-animation-duration: 0.5s;
 
     animation-name: about;
     animation-iteration-count: 1;
     animation-timing-function: ease-out;
-    animation-duration: 0.2s;
+    animation-duration: 0.5s;
+}
+.title{
+	display:inline;
+	-webkit-transition:all 0.2s ease;
+	-moz-transition:all 0.2s ease;
+	-o-transition:all 0.2s ease;
+	-ms-transition:all 0.2s ease;
+	transition:all 0.2s ease;
+	-ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=1)";
+    filter: alpha(opacity=1);
+    opacity: 1;
+}
+a.card-link:hover .title{
+	display:none;
+	-ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    opacity: 0;
 }
 @-moz-keyframes about {
     0% {
@@ -75,27 +92,31 @@ a.card-link:hover .about-link{
     }
 }
 a.card-link:hover .card{
-	margin-bottom:5%;
 	-webkit-transform:scale(1.05,1.05);
 }
 .about-link{
 	display:none;
 }
+.name{
+	display:block;
+}
 .card{
+	display:block;
 	border-radius: 3%;
 	min-height:350px;
+	max-height:400px;
 	background-color:rgba(164,9,134,0.05);
 	outline: none;
     border-color: #e6a7ff;
     box-shadow: 0 0 20px #e6a7ff;
 	align-content:center;
-	padding:20px;
-	margin-bottom:2%;
+	padding:15px;
 	width:100%;
 	-webkit-transition: all 0.2s ease-in-out;
 	}
 .card-contain{
-	padding:10px;
+	margin-top:10px;
+	margin-bottom:10px;
 }
 .cirportrait{
 	margin: 0 auto;
@@ -329,8 +350,8 @@ a.card-link:hover .card{
                     <div class="card">
                     	<div class="cirportrait" id="director"></div>
                         <div class="description">
-                        <h2>Christopher Ma</h2>
-                        <hr class="style17"><h4>Executive Director</h4>
+                        <h2 class="name">Christopher Ma</h2>
+                        <hr class="style17"><h4 class="title">Executive Director</h4>
                         <h5 class="about-link">About Director</h5>
                         </div>
                     </div>
@@ -345,8 +366,8 @@ a.card-link:hover .card{
                     <div class="card">
                     	<div class="cirportrait" id="administration"></div>
                         <div class="description">
-                        <h2>Clement Lai</h2>
-                        <hr class="style17"><h4>Director of Administration</h4>
+                        <h2 class="name">Clement Lai</h2>
+                        <hr class="style17"><h4 class="title">Director of Administration</h4>
                         <h5 class="about-link">About Administration</h5>
                         </div>
                     </div>
@@ -358,20 +379,21 @@ a.card-link:hover .card{
                     <div class="card">
                     	<div class="cirportrait" id="communication"></div>
                         <div class="description">
-                        <h2>Chloe Lim</h2>
-                        <hr class="style17"><h4>Director of Communications</h4>
+                        <h2 class="name">Chloe Lim</h2>
+                        <hr class="style17"><h4 class="title">Director of Communications</h4>
                         <h5 class="about-link">About Communications</h5>
                         </div>
                     </div>
                     </a>
                </div>
+               <div class="clearfix visible-xs-block"></div>
                 <div class="card-contain col-xs-5 col-xs-offset-1 col-sm-5 col-md-5 col-lg-2 col-lg-offset-0">
                     <a class="card-link" href="#">
                     <div class="card">
                     	<div class="cirportrait" id="development"></div>
                         <div class="description">
-                        <h2>Samaa Kazerouni</h2>
-                        <hr class="style17"><h4>Director of Development</h4>
+                        <h2 class="name">Samaa Kazerouni</h2>
+                        <hr class="style17"><h4 class="title">Director of Development</h4>
                         <h5 class="about-link">About Development</h5>
                         </div>
                     </div>
@@ -383,8 +405,8 @@ a.card-link:hover .card{
                     <div class="card">
                     	<div class="cirportrait" id="education"></div>
                         <div class="description">
-                        <h2>Trevor Tsui</h2>
-                        <hr class="style17"><h4>Director of Education</h4>
+                        <h2 class="name">Trevor Tsui</h2>
+                        <hr class="style17"><h4 class="title">Director of Education</h4>
                         <h5 class="about-link">About Education</h5>
                         </div>	
                     </div>
@@ -400,8 +422,8 @@ a.card-link:hover .card{
                     <div class="card">
                     	<div class="cirportrait" id="exaffairs"></div>
                         <div class="description">
-                        <h2>Florence La Rochelle</h2>
-                        <hr class="style17"><h4>Director of External Affairs</h4>
+                        <h2 class="name">Florence La Rochelle</h2>
+                        <hr class="style17"><h4 class="title">Director of External Affairs</h4>
                         <h5 class="about-link">About External Affairs</h5>
                         </div>
                     </div>
@@ -413,8 +435,8 @@ a.card-link:hover .card{
                     <div class="card">
                     	<div class="cirportrait" id="finance"></div>
                         <div class="description">
-                        <h2>Samar Zora</h2>
-                        <hr class="style17"><h4>Director of Finance</h4>
+                        <h2 class="name">Samar Zora</h2>
+                        <hr class="style17"><h4 class="title">Director of Finance</h4>
                         <h5 class="about-link">About Finance</h5>
                         </div>	
                     </div>
@@ -426,8 +448,8 @@ a.card-link:hover .card{
                     <div class="card">
                     	<div class="cirportrait" id="hresources"></div>
                         <div class="description">
-                        <h2>Jin Lee</h2>
-                        <hr class="style17"><h4>Director of Human Resources</h4>
+                        <h2 class="name">Jin Lee</h2>
+                        <hr class="style17"><h4 class="title">Director of Human Resources</h4>
                         <h5 class="about-link">About Human Resources</h5>
                         </div>	
                     </div>
@@ -439,8 +461,8 @@ a.card-link:hover .card{
                     <div class="card">
                     	<div class="cirportrait" id="operations"></div>
                         <div class="description">
-                        <h2>Carmelia Lee</h2>
-                        <hr class="style17"><h4>Director of Operations</h4>
+                        <h2 class="name">Carmelia Lee</h2>
+                        <hr class="style17"><h4 class="title">Director of Operations</h4>
                         <h5 class="about-link">About Operations</h5>
                         </div>
                     </div>
