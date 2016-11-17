@@ -131,7 +131,7 @@ window.onload=swapImage;
 
 <script>
 $(document).ready(function() {
-   var navbar = $(".navbar-fixed-top");
+   var navbar = $(".navbar-header");
 	var brand = $(".navbar-brand img");
 	var navicons = $(".navicons");
 	   $(window).scroll(function(){
@@ -141,20 +141,20 @@ $(document).ready(function() {
 					   height:'80px',
 					   width:'160px',
 					   marginLeft:'0'
-					},30);
+					},30,"linear");
 					navicons.stop().animate({
 						marginTop:"1.5%"
-					},30);
+					},30,"linear");
 		   } else {
-				   navbar.height('40px');
+				   navbar.height('65px');
 				   brand.stop().animate({
 					   height:'50px',
 					   width:'90px',
 					   marginLeft:'1vw'
-					},30);
+					},30,"linear");
 					navicons.stop().animate({
 						marginTop:"0.5%"
-					},30);
+					},30,"linear");
 		   }
 	   });
 });
