@@ -10,7 +10,9 @@
 	background-color: rgba(255,255,255,1.00);
 	height: 100%;
 }
-
+body {
+	overflow-x:hidden;
+}
 .navbar-header{
 	font-family: 'Hero';
 	font-size: 17px;
@@ -49,7 +51,7 @@ nav li a{
 }
 
 a.navbar-brand{
-	margin-left:45%;
+	margin-left:45vw;
 	padding-top:.5%;
 }
 
