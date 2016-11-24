@@ -4,7 +4,7 @@ $(document).ready(function() {
 	var navicons = $(".navicons");
 	   $(window).scroll(function(){
 		   if ($(document).scrollTop()<20){
-				   navbar.height('100px');
+				   navbar.height('7.5%');
 				   brand.stop().animate({
 					   height:'80px',
 					   width:'160px',
@@ -14,7 +14,7 @@ $(document).ready(function() {
 						marginTop:"1.3%"
 					},30,"linear");
 		   } else {
-				   navbar.height('65px');
+				   navbar.height('7%');
 				   brand.stop().animate({
 					   height:'50px',
 					   width:'90px',
