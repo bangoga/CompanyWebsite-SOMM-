@@ -5,39 +5,39 @@
 	font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
 }
 #director{
-	background-image:url(Square/DSC03750.JPG);
+	background-image:url(../Square/DSC03750.JPG);
 	background-size:110%;
 }
 #administration{
-	background-image:url(Square/DSC03382.JPG);
+	background-image:url(../Square/DSC03382.JPG);
 	background-size:110%;
 }
 #communication{
-	background-image:url(Square/DSC03265.JPG);
+	background-image:url(../Square/DSC03265.JPG);
 	background-size:110%;
 }
 #development{
-	background-image:url(Square/DSC03603.JPG);
+	background-image:url(../Square/DSC03603.JPG);
 	background-size:110%;
 }
 #education{
-	background-image:url(Square/DSC03620.JPG);
+	background-image:url(../Square/DSC03620.JPG);
 	background-size:110%;
 }
 #exaffairs{
-	background-image:url(Square/DSC03259.JPG);
+	background-image:url(../Square/DSC03259.JPG);
 	background-size:110%;
 }
 #finance{
-	background-image:url(Square/DSC03740.JPG);
+	background-image:url(../Square/DSC03740.JPG);
 	background-size:110%;
 }
 #hresources{
-	background-image:url(Square/DSC03283.JPG);
+	background-image:url(../Square/DSC03283.JPG);
 	background-size:110%;
 }
 #operations{
-	background-image:url(Square/DSC03301.JPG);
+	background-image:url(../Square/DSC03301.JPG);
 	background-size:110%;
 }
 /* keyframe animations for each director's position */
