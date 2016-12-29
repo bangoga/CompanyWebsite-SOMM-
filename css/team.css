@@ -94,14 +94,29 @@ a.card-link:hover .about-link{
 }
 
 /* card formats on hover */
-a.card-link:hover .title{ /* fades out the directors'positions */
-	display:none;
-	-ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
-    filter: alpha(opacity=0);
-    opacity: 0;
-}
-a.card-link:hover .card{ /*enlarge the cards */
+a.card-link:hover .card{ /* enlarge the cards */
+	-ms-transform:scale(1.05,1.05);
+	-moz-transform:scale(1.05,1.05);
 	-webkit-transform:scale(1.05,1.05);
+	transform:scale(1.05,1.05);
+}
+
+a.card-link:active .card{ /* cards onclick */
+	-ms-transform:scale(1,1);
+	-moz-transform:scale(1,1);
+	-webkit-transform:scale(1,1);
+	transform:scale(1,1);
+}
+
+a.card-link:active .card .cirportrait{ /* cards onclick */
+	-ms-transform:scale(1.05,1.05);
+	-moz-transform:scale(1.05,1.05);
+	-webkit-transform:scale(1.05,1.05);
+	transform:scale(1.05,1.05);
+	
+	-webkit-transition: transform 0.05s ease-in-out;
+    -moz-transition:transform 0.05s ease-in-out;
+    -ms-transition:transform 0.05s ease-in-out;
 }
 
 /* keyframe animations for the title */
