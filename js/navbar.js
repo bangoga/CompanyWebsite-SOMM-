@@ -7,7 +7,7 @@ $(document).ready(function() {
 	   $(window).scroll(function(){
 		   if($(window).width()>=992){
 		   if ($(document).scrollTop()<20){
-				   navbar.height('11%');
+				   navbar.height('100px');
 				   brand.stop().animate({
 					   height:'80px',
 					   width:'160px'
@@ -21,7 +21,7 @@ $(document).ready(function() {
 						marginLeft:"0%"
 					},30,"linear");
 		   } else {
-				   navbar.height('9.5%');
+				   navbar.height('90px');
 				   brand.stop().animate({
 					   height:'70px',
 					   width:'140px'
@@ -35,7 +35,7 @@ $(document).ready(function() {
 						marginLeft:"1%"
 					},30,"linear");
 		   }} else {
-				   navbar.height('11.5%');
+				   navbar.height('103px');
 				   brand.stop().animate({
 					   height:'80px',
 					   width:'160px'

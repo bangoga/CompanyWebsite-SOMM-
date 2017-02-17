@@ -25,7 +25,7 @@ body {
   }
   .navbar-toggle {
       display: block;
-	  margin-top:10%;
+	  margin-top:40px;;
   }
   .navbar-collapse {
       border-top: 1px solid transparent;
@@ -64,7 +64,7 @@ body {
 	font: bold 1.5em Helvetica, Sans-Serif;
 	color: #FFFFFF;
 	width: 100%;
-	height: 11.5%;
+	height: 102px;
 	background: #FFFFFF;
 	background: rgba(255, 255, 255, 1);
 	opacity: 100%;
@@ -103,7 +103,7 @@ nav li a:hover{
 }
 
 #navbar-collapse-1{
-	margin-top:11.5vh;
+	margin-top:102px;;
 }
 .fb_logo{
 	display:none;
@@ -126,7 +126,7 @@ nav li a:hover{
     letter-spacing: -1px;  
 	color: #FFFFFF;
 	width: 100%;
-	height: 11%;
+	height: 100px;
 	background: #FFFFFF;
 	background: rgba(255, 255, 255, 1);
 	opacity: 80%;
@@ -525,23 +525,5 @@ div.img{
     -moz-box-shadow: 0px 2px 6px 2px rgba(0,0,0,0.75);
     box-shadow: 0px 2px 6px 2px rgba(0,0,0,0.75);
 }
-
-/*Richard's edits*/
-
-
-div.navbar-header {
-	height: 120px;
-}
-
-
-#navigation li {
-	margin-right: 30px;
-}
-
-body p {
-	font-family: 'Open Sans', sans-serif;
-	font-size: 0.7em;
-}
-
 
 
