@@ -2,7 +2,7 @@
 /* more formats on description */
 .description{
 	text-align:center;
-	font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+	font-family: 'Roboto Slab', serif;
 }
 #director{
 	background-image:url(../Square/DSC03750.JPG);
@@ -40,7 +40,93 @@
 	background-image:url(../Square/DSC03301.JPG);
 	background-size:110%;
 }
-/* keyframe animations for each director's position */
+/* names and description on the cards */
+.title{
+	display:inline;
+	-webkit-transition:all 0.2s ease;
+	-moz-transition:all 0.2s ease;
+	-o-transition:all 0.2s ease;
+	-ms-transition:all 0.2s ease;
+	transition:all 0.2s ease;
+	-ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=1)";
+    filter: alpha(opacity=1);
+    opacity: 1;
+}
+.about-link{
+	display:none;
+}
+.name{
+	display:block;
+}
+/* pictures on card */
+.cirportrait{
+	margin: 0 auto;
+	background-color:rgba(255,255,255,1.00);
+	width: 150px;
+	height: 150px;
+	border-style:ridge;
+	border-radius: 150px;
+	-webkit-border-radius: 150px;
+	-moz-border-radius: 150px;
+	box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	transition-timing-function:ease;
+}
+/* outer-margin of the cards */
+.card-contain{
+	margin-top:1%;
+	margin-bottom:1%;
+}
+.style17{
+	margin-top:25px;
+	margin-bottom:20px;
+	width:60%;
+	font-size:5px;
+}
+@media (max-width: 991px) {
+	html{
+		min-width:550px;
+		position:relative;
+	}
+	.card{
+	display:inline-block;
+	border-radius: 3%;
+	min-width:200px;
+	min-height:350px;
+	max-height:400px;
+	background-color:rgba(164,9,134,0.05);
+	outline: none;
+    border-color: #e6a7ff;
+    box-shadow: 0 0 20px #e6a7ff;
+	align-content:center;
+	padding:15px;
+	-webkit-transition: all 0.2s ease-in-out;
+	}
+a.card-link{
+	text-decoration:none;
+}
+}
+@media (min-width: 992px) {
+	/* Format for each portrait */
+.card{
+	display:block;
+	border-radius: 3%;
+	min-width:200px;
+	min-height:350px;
+	max-height:400px;
+	background-color:rgba(164,9,134,0.05);
+	outline: none;
+    border-color: #e6a7ff;
+    box-shadow: 0 0 20px #e6a7ff;
+	align-content:center;
+	padding:15px;
+	-webkit-transition: all 0.2s ease-in-out;
+	}
+a.card-link{
+	text-decoration:none;
+}
+	/* keyframe animations for each director's position */
 a.card-link:hover .about-link{
 	color:#FFFFFF;
 	text-transform:uppercase;
@@ -254,4 +340,5 @@ a.card-link:active .card .cirportrait{ /* cards onclick */
     100% {
 		opacity: 1;
     }
+}
 }
