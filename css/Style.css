@@ -14,7 +14,15 @@ p {
 body {
 	font-family: 'Roboto Slab', serif;
 	overflow-x:hidden;
-    height: 100%;
+	background-color:#FFFFFF;
+	min-height:100%;
+	/* Margin bottom by footer height */
+ 	margin-bottom: 100px;
+}
+html {
+  position: relative;
+  min-height: 100%;
+  overflow-x:hidden;
 }
 /* Font Being used in main header*/
 @media (max-width: 991px) {
@@ -59,7 +67,7 @@ body {
 	height: 100%;
 }
 #main{
-	margin-top:110px;
+	margin-top:130px;
 }
 .navbar-header{
 	font: bold 1.5em;
@@ -114,6 +122,9 @@ nav li a:hover{
 }
 
 @media (min-width: 992px) {
+#main{
+	margin-top:5px;
+}
 .fb_logo{
 	float:right;
 	width:50px;
@@ -274,9 +285,6 @@ a.hovereffect span:after {
 /*Animation for the background*/
 
 * {box-sizing:border-box}
-body {
-	background-color:#FFFFFF;
-	}
 .mySlides {
 	display: none;
 	height: 5%;
@@ -368,25 +376,33 @@ body {
 }
 
 /*Footer*/
+.panel-footer {
+  position: absolute;
+  bottom: 0;
+  min-width:100%;
+  max-width:100%;
+  /* Set the fixed height of the footer here */
+  height: 100px;
+  background:rgba(245, 245, 245, 1);
+  text-align:center;
+}
 .foot1{
- max-width:600px;
- background:rgba(245, 245, 245, 1);
- padding-top:1%;
- padding-bottom:1%;
- margin-left:20%;
- text-align: center;
+	background:rgba(245, 245, 245, 1);
+	padding-top:1%;
+	padding-bottom:1%;
+	display:inline-block;
+	overflow-x:hidden;
 }
 .foot1 ul{
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-   
 }
 
 .foot1 li{
-    float: left;
-	margin-left:10%;
+    float:left;
+	min-width:200px;
 	display: block;
 	font: bold 14px/45px;
 }
